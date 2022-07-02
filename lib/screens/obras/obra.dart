@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_youtube/flutter_youtube.dart';
-import '../Model/Video.dart';
-import 'Api2.dart';
+
+import '../../Model/Video.dart';
+import 'obra_controller.dart';
 
 class Obra extends StatefulWidget {
 

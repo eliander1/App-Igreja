@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import '../Model/Video.dart';
-import 'Api.dart';
+import '../../Model/Video.dart';
 import 'package:flutter_youtube/flutter_youtube.dart';
+
+import 'cultos_controller.dart';
 
 class Inicio extends StatefulWidget {
 
@@ -53,7 +54,7 @@ class _InicioState extends State<Inicio> {
                               height: 200, //tamanho do container da foto
                               decoration: BoxDecoration(
                                   image: DecorationImage(
-                                      fit: BoxFit.cover, // faz a foto ocupar todo o container
+                                      fit: BoxFit.cover, // faz a foto ocupar to.do o container
                                       image: NetworkImage(video.imagem)
                                   )
                               ),

@@ -1,9 +1,9 @@
+import 'package:app17_igrejanovo/screens/obras/Obra.dart';
 import 'package:flutter/material.dart';
 import 'CustomSearchDelegate.dart';
-import 'Telas/Obra.dart';
-import 'Telas/Inicio.dart';
-import 'Telas/Ofertas.dart';
-import 'Telas/Connect.dart';
+import 'screens/cultos/cultos.dart';
+import 'screens/oferta/Ofertas.dart';
+import 'screens/connect/Connect.dart';
 
 
 class Home extends StatefulWidget {
@@ -16,6 +16,7 @@ class _HomeState extends State<Home> {
 
   int _indiceAtual = 0;
   String _resultado = "";
+
 
   @override
   Widget build(BuildContext context) {

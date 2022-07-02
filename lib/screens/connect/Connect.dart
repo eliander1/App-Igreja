@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import '../Listas/lista_connect.dart';
+import 'lista_connect.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class Connect extends StatefulWidget {
