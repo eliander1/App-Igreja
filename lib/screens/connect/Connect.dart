@@ -39,7 +39,7 @@ class _ConnectState extends State<Connect> {
                     color: Colors.green),
                     title: Text( "Connect #$contador" ),
                     subtitle: Text("Bairro: " + connectBairro[index]),
-                  onTap: () => _launchLink("https://api.whatsapp.com/send?phone=5592984130408&text=Paz%20do%20Senhor%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Connect%20%231"),
+                  onTap: () => _launchLink("https://api.whatsapp.com/"),
 
                 ));
 
