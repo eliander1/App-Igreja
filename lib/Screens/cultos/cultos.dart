@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import '../../Model/Video.dart';
+import '../../Constants/constants.dart';
+import '../../Model/video.dart';
 import 'package:flutter_youtube/flutter_youtube.dart';
-
 import 'cultos_controller.dart';
 
 class Inicio extends StatefulWidget {

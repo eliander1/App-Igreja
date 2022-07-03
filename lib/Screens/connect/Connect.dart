@@ -1,6 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'lista_connect.dart';
+import 'connect_controller.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class Connect extends StatefulWidget {
@@ -9,7 +8,7 @@ class Connect extends StatefulWidget {
   State<Connect> createState() => _ConnectState();
 }
 Future<void> _launchLink(String url) async {
-  if (!await canLaunch(url)) {
+  if (await canLaunch(url)) {
     await launch(url, forceWebView: false, forceSafariVC: false);
   } else {
     print('Não pode executar o link $url');

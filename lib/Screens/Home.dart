@@ -1,9 +1,9 @@
 import 'package:app17_igrejanovo/screens/obras/Obra.dart';
 import 'package:flutter/material.dart';
-import 'CustomSearchDelegate.dart';
-import 'screens/cultos/cultos.dart';
-import 'screens/oferta/Ofertas.dart';
-import 'screens/connect/Connect.dart';
+import '../CustomSearchDelegate/CustomSearchDelegate.dart';
+import 'cultos/cultos.dart';
+import 'oferta/Ofertas.dart';
+import 'connect/Connect.dart';
 
 
 class Home extends StatefulWidget {

@@ -1,10 +1,8 @@
 import 'package:http/http.dart' as http;
 import 'dart:convert';
-import '../../Model/Video.dart';
+import '../../Constants/constants.dart';
+import '../../Model/video.dart';
 
-const CHAVE_YOUTUBE_API = "*********************************";
-const ID_CANAL2 = "UCrmE8IyYY0iiWqKlW1u-ptw";
-const URL_BASE =  "www.googleapis.com";
 
 class Api {
   Future<List<Video>> pesquisar(String pesquisa ) async {
@@ -13,7 +11,7 @@ class Api {
     var parametro = {
       "part": "snippet",
       "key": "$CHAVE_YOUTUBE_API", //queryParameters
-      "channelId": "$ID_CANAL2",
+      "channelId": "$ID_CANAL_OBRA",
       "order": "date",
       "type": "video",
       "q": pesquisa,

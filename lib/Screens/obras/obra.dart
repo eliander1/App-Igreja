@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_youtube/flutter_youtube.dart';
-
-import '../../Model/Video.dart';
+import '../../Constants/constants.dart';
+import '../../Model/video.dart';
 import 'obra_controller.dart';
 
 class Obra extends StatefulWidget {
@@ -29,7 +29,7 @@ class _ObraState extends State<Obra> {
           switch( snapshot.connectionState ){
             case ConnectionState.none :
             case ConnectionState.waiting :
-              return Center(
+              return const Center(
                 child: CircularProgressIndicator(),
               );
               break;
@@ -70,14 +70,14 @@ class _ObraState extends State<Obra> {
 
                       );
                     },
-                    separatorBuilder: (context,index) => Divider(
+                    separatorBuilder: (context,index) => const Divider(
                       height: 2,
                       color: Colors.grey,
                     ),
                     itemCount: snapshot.data?.length ?? 0
                 );
               }else{
-                return Center(
+                return const Center(
                   child: Text("nenhum dado a ser exibido"),
                 );
 
