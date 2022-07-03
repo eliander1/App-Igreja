@@ -1,15 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import 'ofertas_controller.dart';
 
-class Dizimo extends StatefulWidget {
-  const Dizimo({Key? key}) : super(key: key);
 
-  @override
-  State<Dizimo> createState() => _DizimoState();
-}
+class Dizimo extends StatelessWidget {
 
-class _DizimoState extends State<Dizimo> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,18 +36,13 @@ class _DizimoState extends State<Dizimo> {
               borderRadius: BorderRadius.circular(10.0),
                   side: BorderSide(color: Colors.grey, width: 1)),
                 color: Color(0xFFA3FFCB),
-                child: Row(
-                  children:[Expanded(child: Text("admadureiramanaus@hotmail.com",
-                  style: TextStyle(fontSize: 19, fontFamily: 'PTSerif',),
-                  textAlign: TextAlign.center),),
+                child:
 
-                  IconButton(onPressed: (){
-                  Clipboard.setData(ClipboardData(text: "admadureiramanaus@hotmail.com")).then((_){
-                    ScaffoldMessenger.of(context)
-                        .showSnackBar(SnackBar(content: Text('Pix copiado!')));
-                  });
-                  }, icon: Icon(Icons.copy, size: 21, color: Colors.blue))
-              ]),
+                ContaDadosEIcones(
+                    tipoDado: "pix: admadureiramanaus@hotmail.com",
+                    textoAreaDeTransferencia: "admadureiramanaus@hotmail.com",
+                    textoSnackBar: 'Pix copiado!'
+                ),
         ),
     ),
 
@@ -78,62 +69,29 @@ class _DizimoState extends State<Dizimo> {
                       children: [
                         
                         //  CONTA DA IGREJA //
+                        ContaDadosEIcones(
+                            tipoDado: "Agência: 3142",
+                            textoAreaDeTransferencia: '3142',
+                            textoSnackBar: 'Agência copiada!'
+                        ),
 
-                        Row(
-                         children:[Expanded(child: Container(padding: EdgeInsets.only(left: 10),
-                          child: Text("Agência: 3142", style: TextStyle(fontSize: 19), textAlign: TextAlign.left, ),),),
-                          IconButton(onPressed: (){
-                            Clipboard.setData(ClipboardData(text: "3142")).then((_){
-                              ScaffoldMessenger.of(context)
-                                  .showSnackBar(SnackBar(content: Text('Agência copiada!')));
-                            });
-                          }, icon: Icon(Icons.copy, size: 21, color: Colors.blue))
-                        ]),
+                        ContaDadosEIcones(
+                            tipoDado: "Conta: 43855-3",
+                            textoAreaDeTransferencia: '43855-3',
+                            textoSnackBar: 'Conta copiada!'
+                        ),
 
+                        ContaDadosEIcones(
+                            tipoDado: "Nome: Igreja Evangélica Assembleia de Deus Ministério de Madureira - Campo 5",
+                            textoAreaDeTransferencia: "Igreja Evangélica Assembleia de Deus Ministério de Madureira - Campo 5",
+                            textoSnackBar: 'Nome copiado!'
+                        ),
 
-                        Row(
-                        children:[Expanded(child: Container(padding: EdgeInsets.only(left: 10),
-                        child: Text("Conta: 43855-3", style: TextStyle(fontSize: 19), textAlign: TextAlign.left,),),),
-                          IconButton(onPressed: (){
-                            Clipboard.setData(ClipboardData(text: "43855-3")).then((_){
-                              ScaffoldMessenger.of(context)
-                                  .showSnackBar(SnackBar(content: Text('Conta copiada!')));
-                            });
-                          }, icon: Icon(Icons.copy, size: 21, color: Colors.blue))
-                        ]),
-
-                        // NOME DA IGREJA
-
-                        Row(
-                        children: [Expanded(child: Container(padding: EdgeInsets.only(left: 10),
-                          child:Text("Nome: Igreja Evangélica Assembleia de Deus Ministério de Madureira - Campo 5",
-                          style: TextStyle(fontSize: 19), textAlign: TextAlign.left,),),),
-                          IconButton(onPressed: (){
-                            Clipboard.setData(ClipboardData(text: "Igreja Evangélica Assembleia de Deus Ministério de Madureira - Campo 5")).then((_){
-                              ScaffoldMessenger.of(context)
-                                  .showSnackBar(SnackBar(content: Text('Nome copiado!')));
-                            });
-                          }, icon: Icon(Icons.copy, size: 21, color: Colors.blue))
-                        ]),
-
-                        //CNPJ
-
-                        Row(
-                            children: [Expanded(child: Container(padding: EdgeInsets.only(left: 10),
-                              child: Text("Cnpj: xxxx.xxxx.xx/0001-xx",
-                              style: TextStyle(fontSize: 19), textAlign: TextAlign.left,),),),
-                              IconButton(onPressed: (){
-                                Clipboard.setData(ClipboardData(text: "")).then((_){
-                                  ScaffoldMessenger.of(context)
-                                      .showSnackBar(SnackBar(content: Text('CNPJ copiado!')));
-                                });
-                              }, icon: Icon(Icons.copy, size: 21, color: Colors.blue))
-                            ]),
-
-
-
-
-
+                        ContaDadosEIcones(
+                            tipoDado: "Cnpj: xxxx.xxxx.xx/0001-xx",
+                            textoAreaDeTransferencia: "",
+                            textoSnackBar: 'CNPJ copiado!'
+                        ),
 
                       ]
                 ),
@@ -145,3 +103,5 @@ class _DizimoState extends State<Dizimo> {
     );
   }
 }
+
+

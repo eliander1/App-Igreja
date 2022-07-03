@@ -31,7 +31,7 @@ class BotaoOferta extends StatelessWidget {
             return const TextStyle(fontSize: 12, fontFamily: "Poppins-Bold");}
             return const TextStyle(fontSize: 18, fontFamily: "Poppins-Bold");}),),
 
-          onPressed: (){function;},
+          onPressed: (){function();},
           child:  Text(CTA)
 
     );

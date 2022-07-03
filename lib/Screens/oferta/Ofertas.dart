@@ -16,11 +16,11 @@ class Ofertas extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               BotaoOferta(CTA: 'Ofertas Nova Sede', function: (){
-                Navigator.push(context, PageTransition(child: const Dizimo(), type: PageTransitionType.bottomToTop));
+                Navigator.push(context, PageTransition(child:  Dizimo(), type: PageTransitionType.bottomToTop));
               }),
 
               BotaoOferta(CTA: 'Dízimos e Ofertas', function: (){
-                Navigator.push(context, PageTransition(child: const Carne(), type: PageTransitionType.bottomToTop));
+                Navigator.push(context, PageTransition(child:  Carne(), type: PageTransitionType.bottomToTop));
               })
               ],
         )

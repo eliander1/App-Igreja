@@ -54,7 +54,7 @@ class _ObraState extends State<Obra> {
                               height: 200, //tamanho do container da foto
                               decoration: BoxDecoration(
                                   image: DecorationImage(
-                                      fit: BoxFit.cover, // faz a foto ocupar todo o container
+                                      fit: BoxFit.cover, // faz a foto ocupar t.o.d.o o container
                                       image: NetworkImage(video.imagem)
                                   )
                               ),

@@ -3,7 +3,6 @@ import 'dart:convert';
 import '../../Constants/constants.dart';
 import '../../Model/video.dart';
 
-
 class Api {
   Future<List<Video>> pesquisar(String pesquisa ) async {
     var caminho = "/youtube/v3/search";
@@ -16,7 +15,6 @@ class Api {
       "type": "video",
       "q": pesquisa,
       "maxResults" : "20"
-
     };
 
     var url = Uri.https(URL_BASE, caminho, parametro);
@@ -25,21 +23,15 @@ class Api {
     if (response.statusCode == 200) {
       Map<String, dynamic> dadosJson = json.decode(response.body);
 
-      List <Video> videos = dadosJson["items"].map<Video>(
-              (map){
-            return Video.fromJson(map);
-          }
-      ).toList();
+      List <Video> videos = dadosJson["items"].map<Video>((map){
+            return Video.fromJson(map);}).toList();
 
       return videos;
 
-
     } else {
+      //TODO tratamento de excessao
     }
-
     return pesquisar(pesquisa);
   }
-
-
 }
 
