@@ -1,9 +1,15 @@
 # MVP APP IGREJA
 
-Esse app está na sua primeira versão e ainda NÃO foi refatorado e NÃO foi feito o design, foi meu primeiro projeto solo que fiz logo que comecei a programar e a intenção principal era aprender a consumir API e desenvolver um app próprio do inicio ao fim, em breve vou refatorar e melhorar o design. Se você quiser fazer melhorias fique a vontade.
+Esse app está na sua primeira versão e ainda não foi refatorado e nem foi feito o design, foi meu primeiro projeto solo que fiz logo que comecei a programar e a intenção principal era aprender a consumir API e desenvolver um app próprio do inicio ao fim.
 
 
-Refatoração, updates e publicação em breve!
+
+#### Ele NÃO É OFICIAL DA IGREJA e nem foi encomendado, apenas fiz a fim de adquirir experiência resolvendo um problema real e implementando as possíveis funcionalidades que um cliente real pediria.
+
+
+Em breve vou refatorar, melhorar o design e adicionar funções como inscrição em eventos e ministérios por exemplo.
+
+
 
 <div align="center"
 
