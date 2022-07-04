@@ -1,6 +1,6 @@
 # MVP APP IGREJA
 
-Esse app está na sua primeira versão e ainda NÃO foi refatorado, foi meu primeiro projeto solo que fiz logo que comecei a programar, em breve vou refatorar e melhorar o design. Se você quiser fazer melhorias fique a vontade.
+Esse app está na sua primeira versão e ainda NÃO foi refatorado e NÃO foi feito o design, foi meu primeiro projeto solo que fiz logo que comecei a programar e a intenção principal era aprender a consumir API e desenvolver um app próprio do inicio ao fim, em breve vou refatorar e melhorar o design. Se você quiser fazer melhorias fique a vontade.
 
 
 Refatoração, updates e publicação em breve!
@@ -18,7 +18,7 @@ O app ja abre nessa tela que contém uma API do youtube no qual é possível que
 
 ![Aba_Obra](https://user-images.githubusercontent.com/101966102/173289062-8f1e4e1f-f03f-44b2-a37c-f649d2bc4385.png)
 
-Nossa igreja se encontra em obras, e toda semana o nosso pastor mostra o andamento da obra através de videos no telão durante o culto.
+A igreja se encontra em obras, e toda semana o pastor mostra o andamento da obra através de antes do culto.
 Coloquei essa aba justamente para que esses videos exibidos no telão também sejam colocados em uma playlist no youtube para que os fieis possam acompanhar a obra na palma de sua mão.
 
 
